@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - DCL | İTÜ</title>
+    <meta name="description" content="Digital Construction Laboratory (DCL) İletişim Bilgileri ve İTÜ Ayazağa Kampüsü Ulaşım Haritası.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--acik-gri);">
+    <!-- İTÜ Kurumsal Üst Bant -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <a href="https://www.itu.edu.tr" target="_blank" rel="noopener">İSTANBUL TEKNİK ÜNİVERSİTESİ</a>
+            <span>|</span>
+            <a href="https://ins.itu.edu.tr" target="_blank" rel="noopener">İnşaat Fakültesi</a>
+        </div>
+        <div class="top-bar-right">
+            <span>E-posta: <a href="mailto:dclab@itu.edu.tr">dclab@itu.edu.tr</a></span>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header id="main-nav">
+        <a href="index.html" class="brand-logo-wrap">
+            <img src="img/logo/TR-WHITE.svg" alt="İTÜ DCL Logo">
+        </a>
+        
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menüyü Aç/Kapat">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="biz-kimiz.html">Biz Kimiz</a></li>
+                <li><a href="ekibimiz.html">Ekibimiz</a></li>
+                <li><a href="haberler.html">Haberler ve Etkinlikler</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+                <li class="lang-switch">
+                    <a href="iletisim.html" class="active">TR</a>
+                    <a href="contact-en.html">EN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>İletişim</h1>
+            <p>Sorularınız, proje işbirlikleri ve lisansüstü araştırma olanakları için bizimle iletişime geçebilirsiniz.</p>
+        </div>
+        
+        <section>
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <h3>Bize Ulaşın</h3>
+                    
+                    <div class="contact-detail">
+                        <strong>Adres:</strong>
+                        <span>İstanbul Teknik Üniversitesi, İnşaat Fakültesi, Digital Construction Laboratory (DCL), Maslak, 34469, Sarıyer / İstanbul</span>
+                    </div>
+
+                    <div class="contact-detail">
+                        <strong>E-posta:</strong>
+                        <span><a href="mailto:dclab@itu.edu.tr" style="color: var(--itu-mavi); font-weight: 600;">dclab@itu.edu.tr</a></span>
+                    </div>
+
+                    <div class="contact-detail">
+                        <strong>Konum:</strong>
+                        <span>İTÜ Ayazağa Kampüsü, İnşaat Fakültesi Binası</span>
+                    </div>
+                    
+                    <!-- Google Maps Embed -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.1364506308064!2d29.022718876548777!3d41.10976191386443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5c5c6aa9443%3A0x6b6fa39f5fa44ba4!2zSVRVIMSwbsWfYWF0IEZha8O8bHRlc2k!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="İTÜ İnşaat Fakültesi Konumu">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Mesaj Gönderin</h3>
+                    <form action="mailto:dclab@itu.edu.tr" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="ad_soyad">Ad Soyad *</label>
+                            <input type="text" id="ad_soyad" name="Ad_Soyad" placeholder="Adınız ve Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eposta">E-posta Adresi *</label>
+                            <input type="email" id="eposta" name="Eposta" placeholder="ornek@itu.edu.tr" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="kurum">Kurum / Kuruluş</label>
+                            <input type="text" id="kurum" name="Kurum" placeholder="Üniversite, Şirket veya Kurum Adı">
+                        </div>
+                        <div class="form-group">
+                            <label for="konu">Konu *</label>
+                            <input type="text" id="konu" name="Konu" placeholder="Mesaj Konusu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mesaj">Mesajınız *</label>
+                            <textarea id="mesaj" name="Mesaj" rows="5" placeholder="İletmek istediğiniz mesajınızı yazınız..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Mesajı Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <div style="margin-bottom: 15px;">
+                    <img src="img/logo/TR-WHITE.svg" alt="İTÜ DCL Logo" style="height: 48px;">
+                </div>
+                <p>Digital Construction Laboratory (DCL), İstanbul Teknik Üniversitesi İnşaat Fakültesi bünyesinde inşaat sektörünün dijital dönüşümüne yönelik araştırmalar yürüten bir laboratuvardır.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="biz-kimiz.html">Biz Kimiz</a></li>
+                    <li><a href="ekibimiz.html">Ekibimiz</a></li>
+                    <li><a href="haberler.html">Haberler ve Etkinlikler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="sitemap.html">Site Haritası</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim Bilgileri</h4>
+                <p><strong>Adres:</strong> İTÜ Ayazağa Kampüsü, İnşaat Fakültesi, Maslak, Sarıyer / İstanbul</p>
+                <p style="margin-top: 10px;"><strong>E-posta:</strong> dclab@itu.edu.tr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 İstanbul Teknik Üniversitesi | Digital Construction Laboratory (DCL). Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
